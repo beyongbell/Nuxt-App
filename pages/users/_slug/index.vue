@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Users Slug Detail : {{ id }}</h1>
+    <nuxt-link to="/users"> Back </nuxt-link>
   </div>
 </template>
 

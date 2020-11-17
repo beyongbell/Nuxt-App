@@ -1,15 +1,6 @@
 <template>
   <div>
-    <h1>Users Detail : {{ id }}</h1>
+    <h1>Users Id</h1>
+    <nuxt-link to="/users"> Back </nuxt-link>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      id: this.$route.params.id,
-    }
-  },
-}
-</script>

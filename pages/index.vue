@@ -20,6 +20,8 @@
         >
           GitHub
         </a>
+        <nuxt-link to="/about" class="button--grey"> About </nuxt-link>
+        <nuxt-link to="/users" class="button--grey"> Users </nuxt-link>
       </div>
     </div>
   </div>
