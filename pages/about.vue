@@ -4,3 +4,9 @@
     <nuxt-link to="/"> Home </nuxt-link>
   </div>
 </template>
+
+<script>
+export default {
+  layout: 'admin',
+}
+</script>
