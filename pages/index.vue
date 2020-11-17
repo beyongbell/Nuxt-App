@@ -22,6 +22,7 @@
         </a>
         <nuxt-link to="/about" class="button--grey"> About </nuxt-link>
         <nuxt-link to="/users" class="button--grey"> Users </nuxt-link>
+        <nuxt-link to="/photos" class="button--grey"> Photos </nuxt-link>
       </div>
       <br />
       <nuxt-content :document="post"></nuxt-content>
