@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">hello-nuxt-app</h1>
+      <h1 class="title">{{ title }}</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -23,12 +23,24 @@
         <nuxt-link to="/about" class="button--grey"> About </nuxt-link>
         <nuxt-link to="/users" class="button--grey"> Users </nuxt-link>
       </div>
+      <br />
+      <nuxt-content :document="post"></nuxt-content>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content }) {
+    const post = await $content('posts/hello').fetch()
+    return { post, title: post.title }
+  },
+  data() {
+    return {
+      title: 'Nuxt Js',
+    }
+  },
+}
 </script>
 
 <style>
