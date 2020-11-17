@@ -12,5 +12,8 @@ export default {
       id: this.$route.params.slug,
     }
   },
+  validate({ params }) {
+    return params.slug === '1'
+  },
 }
 </script>
